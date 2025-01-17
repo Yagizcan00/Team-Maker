@@ -102,116 +102,12 @@ players_data = [
     },
 ]
 
-'''
-# Yağızın puanlaması
-players_data = [
-    {
-        "İsim": "Yağızcan",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Becerisi": 5,
-        "Takım Savunması Becerisi": 4,
-    },
-    {
-        "İsim": "Samet",
-        "Topu Kullanma Becerisi": 4,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 2,
-    },
-    {
-        "İsim": "Oğuzcan",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Becerisi": 1,
-        "Takım Savunması Becerisi": 2,
-    },
-    {
-        "İsim": "Muhammed",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Becerisi": 3,
-        "Takım Savunması Becerisi": 3,
-    },
-    {
-        "İsim": "Nurullah",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 5,
-        "Takım Savunması Becerisi": 4,
-    },
-    {
-        "İsim": "Yasin",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 3,
-    },
-    {
-        "İsim": "Oğuzhan",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 2,
-    },
-    {
-        "İsim": "Cihan",
-        "Topu Kullanma Becerisi": 4,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 3,
-        "Takım Savunması Becerisi": 2,
-    },
-    {
-        "İsim": "İlker",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 1,
-        "Birebir Savunma Becerisi": 3,
-        "Takım Savunması Becerisi": 4,
-    },
-    {
-        "İsim": "Cengiz",
-        "Topu Kullanma Becerisi": 1,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 3,
-    },
-    {
-        "İsim": "Kerem",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 2,
-    },
-    {
-        "İsim": "Emre",
-        "Topu Kullanma Becerisi": 1,
-        "Topsuz Alanda Hücum Becerisi": 1,
-        "Birebir Savunma Becerisi": 4,
-        "Takım Savunması Becerisi": 3,
-    },
-    {
-        "İsim": "Görkem",
-        "Topu Kullanma Becerisi": 5,
-        "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Becerisi": 4,
-        "Takım Savunması Becerisi": 2,
-    },
-    {
-        "İsim": "Reşat",
-        "Topu Kullanma Becerisi": 5,
-        "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 3,
-    },
-]
-'''
-
 # Çarpanlar
 multipliers = {
     "topu_kullanma_becerisi": 1.4,
     "topsuz_alanda_hücum_becerisi": 1.2,
-    "birebir_savunma_becerisi": 1.2,
-    "takim_savunması_becerisi": 1.3,
+    "birebir_savunma_becerisi": 1.3,
+    "takim_savunması_becerisi": 1.5,
 }
 
 # DataFrame oluşturma
@@ -229,21 +125,14 @@ df["Genel Savunma Becerisi"] = (
 
 # Pozisyona göre etiketleme
 df["Pozisyon"] = df.apply(
-    lambda row: (
-        "Savunma"
-        if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"]
-        else "Hücum"
-    ),
-    axis=1,
+    lambda row: "Savunma" if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"] else "Hücum",
+    axis=1
 )
-
 
 # Dengeli takım oluşturma
 def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
     teams = {f"Team {i+1}": [] for i in range(num_teams)}
-    df_sorted = df.sort_values(
-        by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False
-    )
+    df_sorted = df.sort_values(by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False)
 
     # Savunma ve hücum oyuncuları
     defenders = df_sorted[df_sorted["Pozisyon"] == "Savunma"]
@@ -271,7 +160,6 @@ def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
                 remaining_players = remaining_players.iloc[1:]
 
     return teams
-
 
 # Takımları oluştur
 balanced_teams = balance_teams(df)
