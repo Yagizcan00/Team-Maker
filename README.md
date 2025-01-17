@@ -1,6 +1,6 @@
 Aşağıda yapılan puanlamalar mevcut.
 
-Yapılan puanlamalarda "Topu Kullanma Becerisi" puanı oyuncunun top kendisindeyken ne kadar etkili bir şekilde oyun kurabildiğini ve hücum edebildiğini genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda **"Topu Kullanma Becerisi"** puanı oyuncunun top kendisindeyken ne kadar etkili bir şekilde oyun kurabildiğini ve hücum edebildiğini genel olarak ifade eden bir özelliktir.
 
 - Eğer oyuncu dribling ile adam geçemiyorsa ve sadece en yakınındaki takım arkadaşlarına isabetli paslar atıyorsa bu beceriye 1 puan vermeniz önerilir.
 - Eğer oyuncu topu boş alana sürebiliyorsa ve müsait pozisyonda gördüğü önünde bulunan arkadaşlarına pas dağıtabiliyorsa bu beceriye 2 puan vermeniz önerilir.
