@@ -1,4 +1,4 @@
-Aşağıda yapılan puanlamalar mevcut.
+# Kadro Kurma Programı
 
 Yapılan puanlamalarda **"Topu Kullanma Becerisi"** puanı oyuncunun top kendisindeyken ne kadar etkili bir şekilde oyun kurabildiğini ve hücum edebildiğini genel olarak ifade eden bir özelliktir.
 
