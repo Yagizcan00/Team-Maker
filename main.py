@@ -208,10 +208,10 @@ players_data = [
 
 # Çarpanlar
 multipliers = {
-    "topu_kullanma_becerisi": 3,
-    "topsuz_alanda_hücum_becerisi": 1,
-    "birebir_savunma_becerisi": 2,
-    "takim_savunması_becerisi": 2,
+    "topu_kullanma_becerisi": 1.4,
+    "topsuz_alanda_hücum_becerisi": 1.2,
+    "birebir_savunma_becerisi": 1.2,
+    "takim_savunması_becerisi": 1.3,
 }
 
 # DataFrame oluşturma
