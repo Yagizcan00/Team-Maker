@@ -18,7 +18,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
 # Yağızın Puanlaması
 
     players_data = [
-    
     {
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
@@ -26,7 +25,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 5,
         "Takım Savunması Becerisi": 4,
     },
-    
     {
         "İsim": "Samet",
         "Topu Kullanma Becerisi": 4,
@@ -34,7 +32,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Oğuzcan",
         "Topu Kullanma Becerisi": 2,
@@ -42,7 +39,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 1,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Muhammed",
         "Topu Kullanma Becerisi": 2,
@@ -50,7 +46,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Nurullah",
         "Topu Kullanma Becerisi": 3,
@@ -58,7 +53,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 5,
         "Takım Savunması Becerisi": 4,
     },
-    
     {
         "İsim": "Yasin",
         "Topu Kullanma Becerisi": 3,
@@ -66,7 +60,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Oğuzhan",
         "Topu Kullanma Becerisi": 2,
@@ -74,7 +67,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Cihan",
         "Topu Kullanma Becerisi": 4,
@@ -82,7 +74,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "İlker",
         "Topu Kullanma Becerisi": 2,
@@ -90,7 +81,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 4,
     },
-    
     {
         "İsim": "Cengiz",
         "Topu Kullanma Becerisi": 1,
@@ -98,7 +88,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Kerem",
         "Topu Kullanma Becerisi": 2,
@@ -106,7 +95,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Emre",
         "Topu Kullanma Becerisi": 1,
@@ -114,7 +102,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Görkem",
         "Topu Kullanma Becerisi": 5,
@@ -122,7 +109,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Reşat",
         "Topu Kullanma Becerisi": 5,
@@ -135,7 +121,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
 # Görkem abinin puanlaması
 
     players_data = [
-
     {
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
@@ -143,7 +128,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 5,
         "Takım Savunması Becerisi": 5,
     },
-    
     {
         "İsim": "Samet",
         "Topu Kullanma Becerisi": 5,
@@ -151,7 +135,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 1,
         "Takım Savunması Becerisi": 1,
     },
-    
     {
         "İsim": "Oğuzcan",
         "Topu Kullanma Becerisi": 2,
@@ -159,7 +142,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 1,
         "Takım Savunması Becerisi": 1,
     },
-    
     {
         "İsim": "Muhammed",
         "Topu Kullanma Becerisi": 4,
@@ -167,7 +149,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Nurullah",
         "Topu Kullanma Becerisi": 3,
@@ -175,7 +156,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 5,
         "Takım Savunması Becerisi": 4,
     },
-    
     {
         "İsim": "Yasin",
         "Topu Kullanma Becerisi": 3,
@@ -183,7 +163,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Oğuzhan",
         "Topu Kullanma Becerisi": 1,
@@ -191,7 +170,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Cihan",
         "Topu Kullanma Becerisi": 5,
@@ -199,7 +177,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "İlker",
         "Topu Kullanma Becerisi": 3,
@@ -207,7 +184,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Cengiz",
         "Topu Kullanma Becerisi": 1,
@@ -215,7 +191,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Kerem",
         "Topu Kullanma Becerisi": 3,
@@ -223,7 +198,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 3,
     },
-    
     {
         "İsim": "Emre",
         "Topu Kullanma Becerisi": 1,
@@ -231,7 +205,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Görkem",
         "Topu Kullanma Becerisi": 5,
@@ -239,7 +212,6 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 2,
     },
-    
     {
         "İsim": "Reşat",
         "Topu Kullanma Becerisi": 5,
