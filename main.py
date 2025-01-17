@@ -4,234 +4,234 @@ import pandas as pd
 players_data = [
     {
         "İsim": "Yağızcan",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 4,
-        "Birebir Savunma": 5,
-        "Takım Savunma": 5,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 4,
+        "Birebir Savunma Becerisi": 5,
+        "Takım Savunma Becerisi": 5,
     },
     {
         "İsim": "Samet",
-        "Top Becerisi": 5,
-        "Topsuz Becerisi": 5,
-        "Birebir Savunma": 1,
-        "Takım Savunma": 1,
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 5,
+        "Birebir Savunma Becerisi": 1,
+        "Takım Savunma Becerisi": 1,
     },
     {
         "İsim": "Oğuzcan",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 1,
-        "Takım Savunma": 1,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 1,
+        "Takım Savunma Becerisi": 1,
     },
     {
         "İsim": "Muhammed",
-        "Top Becerisi": 4,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 4,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Nurullah",
-        "Top Becerisi": 3,
-        "Topsuz Becerisi": 4,
-        "Birebir Savunma": 5,
-        "Takım Savunma": 4,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 4,
+        "Birebir Savunma Becerisi": 5,
+        "Takım Savunma Becerisi": 4,
     },
     {
         "İsim": "Yasin",
-        "Top Becerisi": 3,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Oğuzhan",
-        "Top Becerisi": 1,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 1,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Cihan",
-        "Top Becerisi": 5,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 4,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "İlker",
-        "Top Becerisi": 3,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 3,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 3,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Cengiz",
-        "Top Becerisi": 1,
-        "Topsuz Becerisi": 1,
-        "Birebir Savunma": 4,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 1,
+        "Topsuz Alanda Hücum Becerisi": 1,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Kerem",
-        "Top Becerisi": 3,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 3,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 3,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Emre",
-        "Top Becerisi": 1,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 3,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 1,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 3,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Görkem",
-        "Top Becerisi": 5,
-        "Topsuz Becerisi": 5,
-        "Birebir Savunma": 4,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 5,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Reşat",
-        "Top Becerisi": 5,
-        "Topsuz Becerisi": 5,
-        "Birebir Savunma": 4,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 5,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunma Becerisi": 3,
     },
 ]
 
-
+'''
 # Yağızın puanlaması
 players_data = [
     {
         "İsim": "Yağızcan",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 5,
-        "Takım Savunma": 4,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 5,
+        "Takım Savunma Becerisi": 4,
     },
     {
         "İsim": "Samet",
-        "Top Becerisi": 4,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 4,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Oğuzcan",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 1,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 1,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Muhammed",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 3,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 3,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Nurullah",
-        "Top Becerisi": 3,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 5,
-        "Takım Savunma": 4,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 5,
+        "Takım Savunma Becerisi": 4,
     },
     {
         "İsim": "Yasin",
-        "Top Becerisi": 3,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Oğuzhan",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Cihan",
-        "Top Becerisi": 4,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 3,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 4,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 3,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "İlker",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 1,
-        "Birebir Savunma": 3,
-        "Takım Savunma": 4,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 1,
+        "Birebir Savunma Becerisi": 3,
+        "Takım Savunma Becerisi": 4,
     },
     {
         "İsim": "Cengiz",
-        "Top Becerisi": 1,
-        "Topsuz Becerisi": 2,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 1,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Kerem",
-        "Top Becerisi": 2,
-        "Topsuz Becerisi": 3,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Emre",
-        "Top Becerisi": 1,
-        "Topsuz Becerisi": 1,
-        "Birebir Savunma": 4,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 1,
+        "Topsuz Alanda Hücum Becerisi": 1,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunma Becerisi": 3,
     },
     {
         "İsim": "Görkem",
-        "Top Becerisi": 5,
-        "Topsuz Becerisi": 5,
-        "Birebir Savunma": 4,
-        "Takım Savunma": 2,
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 5,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunma Becerisi": 2,
     },
     {
         "İsim": "Reşat",
-        "Top Becerisi": 5,
-        "Topsuz Becerisi": 5,
-        "Birebir Savunma": 2,
-        "Takım Savunma": 3,
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 5,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunma Becerisi": 3,
     },
 ]
-
+'''
 
 # Çarpanlar
 multipliers = {
-    "top_becerisi": 1.4,
-    "topsuz_becerisi": 1.2,
-    "birebir_savunma": 1.3,
-    "takim_savunma": 1.5,
+    "topu_kullanma_becerisi": 1.5,
+    "topsuz_alanda_hücum_becerisi": 1.2,
+    "birebir_savunma_becerisi": 1.4,
+    "takim_savunma_becerisi": 1.5,
 }
 
 # DataFrame oluşturma
 df = pd.DataFrame(players_data)
 
 # Hücum ve savunma becerilerini hesaplama
-df["Asıl Hücum Becerisi"] = (
-    df["Top Becerisi"] * multipliers["top_becerisi"]
-    + df["Topsuz Becerisi"] * multipliers["topsuz_becerisi"]
+df["Genel Hücum Becerisi"] = (
+    df["Topu Kullanma Becerisi"] * multipliers["topu_kullanma_becerisi"]
+    + df["Topsuz Alanda Hücum Becerisi"] * multipliers["topsuz_alanda_hücum_becerisi"]
 )
-df["Asıl Savunma Becerisi"] = (
-    df["Birebir Savunma"] * multipliers["birebir_savunma"]
-    + df["Takım Savunma"] * multipliers["takim_savunma"]
+df["Genel Savunma Becerisi"] = (
+    df["Birebir Savunma Becerisi"] * multipliers["birebir_savunma_becerisi"]
+    + df["Takım Savunma Becerisi"] * multipliers["takim_savunma_becerisi"]
 )
 
 # Pozisyona göre etiketleme
 df["Pozisyon"] = df.apply(
     lambda row: (
         "Savunma"
-        if row["Asıl Savunma Becerisi"] > row["Asıl Hücum Becerisi"]
+        if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"]
         else "Hücum"
     ),
     axis=1,
@@ -242,7 +242,7 @@ df["Pozisyon"] = df.apply(
 def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
     teams = {f"Team {i+1}": [] for i in range(num_teams)}
     df_sorted = df.sort_values(
-        by=["Asıl Hücum Becerisi", "Asıl Savunma Becerisi"], ascending=False
+        by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False
     )
 
     # Savunma ve hücum oyuncuları
