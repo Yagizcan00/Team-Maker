@@ -18,8 +18,8 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
 # Yağızın Puanlaması
 
 players_data = [
-
-{
+    
+    {
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 2,
