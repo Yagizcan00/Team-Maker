@@ -110,8 +110,8 @@ players_data = [
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Becerisi": 5,
-        "Takım Savunması Becerisi": 4,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunması Becerisi": 5,
     },
     {
         "İsim": "Samet",
@@ -165,8 +165,8 @@ players_data = [
     {
         "İsim": "İlker",
         "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 1,
-        "Birebir Savunma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 4,
     },
     {
@@ -186,9 +186,9 @@ players_data = [
     {
         "İsim": "Emre",
         "Topu Kullanma Becerisi": 1,
-        "Topsuz Alanda Hücum Becerisi": 1,
+        "Topsuz Alanda Hücum Becerisi": 2,
         "Birebir Savunma Becerisi": 4,
-        "Takım Savunması Becerisi": 3,
+        "Takım Savunması Becerisi": 4,
     },
     {
         "İsim": "Görkem",
