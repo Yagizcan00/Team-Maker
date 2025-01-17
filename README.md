@@ -1,4 +1,8 @@
 Aşağıda yapılan puanlamalar mevcut.
+Yapılan puanlamalarda "Top Becerisi" puanı oyuncunun top kendisindeyken ne kadar etkili bir şekilde oyun kurabildiğini ve hücum edebildiğini genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda "Topsuz Becerisi" puanı oyuncunun top kendisinde değilken ne kadar etkili bir şekilde kendini boş/müsait pozisyonda göstermesi ve ne kadar etkili bir şekilde savunma arkasına koşu attığını genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda "Birebir Savunma" puanı oyuncunun rakip hücumcu ile birebir kaldığı zaman ne kadar etkili bir şekilde topu rakibinden kapabildiğini genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda "Takım Savunması" puanı oyuncunun top rakip takımdayken ne kadar dikkatli olduğunu, ne kadar iyi pozisyon aldığını ve takım arkadaşlarını rakip hücumculara karşı ne kadar iyi uyardığını genel olarak ifade eden bir özelliktir.
 
 # Yağızın Puanlaması
 players_data = [
