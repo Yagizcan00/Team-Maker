@@ -17,7 +17,9 @@ Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip t
 
 # Yağızın Puanlaması
 
-players_data = [{
+players_data = [
+
+{
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 2,
@@ -131,7 +133,9 @@ players_data = [{
 
 # Görkem abinin puanlaması
 
-players_data = [{
+players_data = [
+
+{
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 4,
