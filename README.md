@@ -135,7 +135,7 @@ players_data = [
 
 players_data = [
 
-{
+    {
         "İsim": "Yağızcan",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 4,
