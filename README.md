@@ -8,11 +8,11 @@ Yapılan puanlamalarda **"Topu Kullanma Becerisi"** puanı oyuncunun top kendisi
 - Eğer oyuncu isabetli güzel paslar ve şutlar atabiliyor ve rakip oyuncuları maç esnasında düzenli olarak (sayısı çok sık olmasa da olur) geçebiliyorsa bu beceriye 4 puan vermeniz önerilir.
 - Eğer oyuncu takımını hücum konusunda taşıyor ve gerçekten etkili bir şekilde dribling yaparak girdiği pozisyonları gole çevirebiliyorsa bu beceriye 5 puan vermeniz önerilir.
 
-Yapılan puanlamalarda "Topsuz Alanda Hücum Becerisi" puanı oyuncunun top kendisinde değilken ne kadar etkili bir şekilde kendini boş/müsait pozisyonda göstermesi ve ne kadar etkili bir şekilde savunma arkasına koşu attığını genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda **"Topsuz Alanda Hücum Becerisi"** puanı oyuncunun top kendisinde değilken ne kadar etkili bir şekilde kendini boş/müsait pozisyonda göstermesi ve ne kadar etkili bir şekilde savunma arkasına koşu attığını genel olarak ifade eden bir özelliktir.
 
-Yapılan puanlamalarda "Birebir Savunma Becerisi" puanı oyuncunun rakip hücumcu ile birebir kaldığı zaman ne kadar etkili bir şekilde topu rakibinden kapabildiğini genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda **"Birebir Savunma Becerisi"** puanı oyuncunun rakip hücumcu ile birebir kaldığı zaman ne kadar etkili bir şekilde topu rakibinden kapabildiğini genel olarak ifade eden bir özelliktir.
 
-Yapılan puanlamalarda "Takım Savunması Becerisi" puanı oyuncunun top rakip takımdayken ne kadar dikkatli olduğunu, ne kadar iyi pozisyon aldığını ve takım arkadaşlarını rakip hücumculara karşı ne kadar iyi uyardığını genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda **"Takım Savunması Becerisi"** puanı oyuncunun top rakip takımdayken ne kadar dikkatli olduğunu, ne kadar iyi pozisyon aldığını ve takım arkadaşlarını rakip hücumculara karşı ne kadar iyi uyardığını genel olarak ifade eden bir özelliktir.
 
 
 # Yağızın Puanlaması
