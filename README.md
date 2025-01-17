@@ -25,6 +25,7 @@ players_data = [
         "Birebir Savunma Becerisi": 5,
         "Takım Savunması Becerisi": 4,
     },
+    
     {
         "İsim": "Samet",
         "Topu Kullanma Becerisi": 4,
@@ -32,6 +33,7 @@ players_data = [
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 2,
     },
+    
     {
         "İsim": "Oğuzcan",
         "Topu Kullanma Becerisi": 2,
@@ -39,6 +41,7 @@ players_data = [
         "Birebir Savunma Becerisi": 1,
         "Takım Savunması Becerisi": 2,
     },
+    
     {
         "İsim": "Muhammed",
         "Topu Kullanma Becerisi": 2,
@@ -46,6 +49,7 @@ players_data = [
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 3,
     },
+    
     {
         "İsim": "Nurullah",
         "Topu Kullanma Becerisi": 3,
@@ -53,6 +57,7 @@ players_data = [
         "Birebir Savunma Becerisi": 5,
         "Takım Savunması Becerisi": 4,
     },
+    
     {
         "İsim": "Yasin",
         "Topu Kullanma Becerisi": 3,
@@ -60,6 +65,7 @@ players_data = [
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
+    
     {
         "İsim": "Oğuzhan",
         "Topu Kullanma Becerisi": 2,
@@ -67,6 +73,7 @@ players_data = [
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 2,
     },
+    
     {
         "İsim": "Cihan",
         "Topu Kullanma Becerisi": 4,
@@ -74,6 +81,7 @@ players_data = [
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 2,
     },
+    
     {
         "İsim": "İlker",
         "Topu Kullanma Becerisi": 2,
@@ -81,6 +89,7 @@ players_data = [
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 4,
     },
+    
     {
         "İsim": "Cengiz",
         "Topu Kullanma Becerisi": 1,
@@ -88,6 +97,7 @@ players_data = [
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
+    
     {
         "İsim": "Kerem",
         "Topu Kullanma Becerisi": 2,
@@ -95,6 +105,7 @@ players_data = [
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 2,
     },
+    
     {
         "İsim": "Emre",
         "Topu Kullanma Becerisi": 1,
@@ -102,6 +113,7 @@ players_data = [
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 3,
     },
+    
     {
         "İsim": "Görkem",
         "Topu Kullanma Becerisi": 5,
@@ -109,6 +121,7 @@ players_data = [
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 2,
     },
+    
     {
         "İsim": "Reşat",
         "Topu Kullanma Becerisi": 5,
@@ -116,6 +129,7 @@ players_data = [
         "Birebir Savunma Becerisi": 2,
         "Takım Savunması Becerisi": 3,
     },
+    
 ]
 
 # Görkem abinin puanlaması
