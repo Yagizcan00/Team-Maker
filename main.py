@@ -78,3 +78,9 @@ balanced_teams = balance_teams(df)
 for team_name, players in balanced_teams.items():
     print(f"\n{team_name} Players:")
     print(pd.DataFrame(players))
+
+# Takımları yalnızca oyuncu isimleriyle görüntüleme
+for team_name, players in balanced_teams.items():
+    print(f"\n{team_name} Players:")
+    player_names = [player["İsim"] for player in players]
+    print(pd.DataFrame(player_names, columns=["İsim"]))
