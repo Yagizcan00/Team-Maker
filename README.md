@@ -5,7 +5,7 @@ Yapılan puanlamalarda **"Topu Kullanma Becerisi"** puanı oyuncunun top kendisi
 - Eğer oyuncu dribling ile adam geçemiyorsa ve sadece en yakınındaki takım arkadaşlarına isabetli paslar atıyorsa bu beceriye 1 puan vermeniz önerilir.
 - Eğer oyuncu topu boş alana sürebiliyorsa ve müsait pozisyonda gördüğü önünde bulunan arkadaşlarına pas dağıtabiliyorsa bu beceriye 2 puan vermeniz önerilir.
 - Eğer oyuncu hem ara ara adam geçebiliyorsa hem de pas verme konusunda aşağı yukarı bir standardı varsa bu beceriye 4 puan vermeniz önerilir.
-- Eğer oyuncu isabetli güzel paslar ve şutlar atabiliyor ve rakip oyuncuları maç esnasında düzenli olarak (sayısı çok sık olmasa da olur) geçebiliyorsa bu beceriye 4 puan vermeniz önerilir.
+- Eğer oyuncu isabetli güzel paslar ve şutlar atabiliyor ve rakip oyuncuları çalımlayabiliyorsa bu beceriye 4 puan vermeniz önerilir.
 - Eğer oyuncu takımını hücum konusunda taşıyor ve gerçekten etkili bir şekilde dribling yaparak girdiği pozisyonları gole çevirebiliyorsa bu beceriye 5 puan vermeniz önerilir.
 
 Yapılan puanlamalarda **"Topsuz Alanda Hücum Becerisi"** puanı oyuncunun top kendisinde değilken ne kadar etkili bir şekilde kendini boş/müsait pozisyonda göstermesi ve ne kadar etkili bir şekilde savunma arkasına koşu attığını genel olarak ifade eden bir özelliktir.
