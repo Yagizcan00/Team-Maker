@@ -1,7 +1,7 @@
 import pandas as pd
 
 '''
-# Görkem abinin puanlaması
+# Görkem Abinin Puanlaması
 players_data = [
     {
         "İsim": "Yağızcan",
@@ -138,14 +138,14 @@ players_data = [
         "İsim": "Nurullah",
         "Topu Kullanma Becerisi": 3,
         "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 5,
+        "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 4,
     },
     {
         "İsim": "Yasin",
         "Topu Kullanma Becerisi": 3,
         "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Becerisi": 2,
+        "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 3,
     },
     {
@@ -158,7 +158,7 @@ players_data = [
     {
         "İsim": "Cihan",
         "Topu Kullanma Becerisi": 4,
-        "Topsuz Alanda Hücum Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 2,
         "Birebir Savunma Becerisi": 3,
         "Takım Savunması Becerisi": 2,
     },
