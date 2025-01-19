@@ -1,6 +1,6 @@
 import pandas as pd
 
-"""
+'''
 # Görkem Abinin Puanlaması
 players_data = [
     {
@@ -102,7 +102,7 @@ players_data = [
         "Takım Savunması Becerisi": 3,
     },
 ]
-"""
+'''
 
 # Yağızın Puanlaması
 players_data = [
@@ -227,38 +227,22 @@ df["Genel Savunma Becerisi"] = (
     + df["Takım Savunması Becerisi"] * multipliers["takim_savunması_becerisi"]
 )
 
-
-# Pozisyona göre etiketleme (Hücum, Savunma, İki Yönlü)
-def determine_position(row, threshold=1):
-    if abs(row["Genel Hücum Becerisi"] - row["Genel Savunma Becerisi"]) <= threshold:
-        return "İki Yönlü"
-    elif row["Genel Hücum Becerisi"] > row["Genel Savunma Becerisi"]:
-        return "Hücum"
-    else:
-        return "Savunma"
-
-
-# Yeni pozisyonları belirle
-df["Pozisyon"] = df.apply(determine_position, axis=1)
-
+# Pozisyona göre etiketleme
+df["Pozisyon"] = df.apply(
+    lambda row: "Savunma" if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"] else "Hücum",
+    axis=1
+)
 
 # Dengeli takım oluşturma
 def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
     teams = {f"Team {i+1}": [] for i in range(num_teams)}
-    df_sorted = df.sort_values(
-        by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False
-    )
+    df_sorted = df.sort_values(by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False)
 
-    # Savunma, hücum ve iki yönlü oyuncuları ayır
+    # Savunma ve hücum oyuncuları
     defenders = df_sorted[df_sorted["Pozisyon"] == "Savunma"]
     attackers = df_sorted[df_sorted["Pozisyon"] == "Hücum"]
-    two_way_players = df_sorted[df_sorted["Pozisyon"] == "İki Yönlü"]
 
-    # İki yönlü oyuncuları hem savunma hem de hücum gruplarına ekle
-    defenders = pd.concat([defenders, two_way_players])
-    attackers = pd.concat([attackers, two_way_players])
-
-    # Minimum savunma ve hücum oyuncusu atama
+    # Takımlara savunma ve hücum oyuncuları dağıtma
     for i in range(min_defenders):
         for team in teams.keys():
             if not defenders.empty:
@@ -272,29 +256,17 @@ def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
                 attackers = attackers.iloc[1:]
 
     # Kalan oyuncuları sırayla dağıtma
-    remaining_players = pd.concat([defenders, attackers]).drop_duplicates()
-    for i, player in enumerate(remaining_players.to_dict("records")):
-        teams[f"Team {i % num_teams + 1}"].append(player)
+    remaining_players = pd.concat([defenders, attackers])
+    while not remaining_players.empty:
+        for team in teams.keys():
+            if not remaining_players.empty:
+                teams[team].append(remaining_players.iloc[0].to_dict())
+                remaining_players = remaining_players.iloc[1:]
 
     return teams
 
-
 # Takımları oluştur
 balanced_teams = balance_teams(df)
-
-# Takımları yazdır ve puanları göster
-for team_name, players in balanced_teams.items():
-    total_offense = sum(player["Genel Hücum Becerisi"] for player in players)
-    total_defense = sum(player["Genel Savunma Becerisi"] for player in players)
-
-    print(f"\n{team_name} Oyuncuları:")
-    for player in players:
-        print(player["İsim"])
-
-    print(
-        f"{team_name} - Toplam Hücum Puanı: {total_offense}, Toplam Savunma Puanı: {total_defense}"
-    )
-
 
 # Takımları görüntüleme
 for team_name, players in balanced_teams.items():
