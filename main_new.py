@@ -206,10 +206,10 @@ yagiz_players_data = [
 
 # Çarpanlar
 multipliers = {
-    "topu_kullanma_becerisi": 5,
-    "topsuz_alanda_hücum_becerisi": 3,
-    "birebir_savunma_becerisi": 4,
-    "takim_savunması_becerisi": 3,
+    "topu_kullanma_becerisi": 1.5,
+    "topsuz_alanda_hücum_becerisi": 1.3,
+    "birebir_savunma_becerisi": 1.4,
+    "takim_savunması_becerisi": 1.4,
 }
 
 # DataFrame oluşturma
@@ -228,9 +228,9 @@ df["Genel Savunma Becerisi"] = (
 # Pozisyona göre etiketleme
 df["Pozisyon"] = df.apply(
     lambda row: (
-        "Savunma"
-        if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"]
-        else "Hücum"
+        "Hücum"
+        if row["Genel Hücum Becerisi"] > row["Genel Savunma Becerisi"]
+        else "Savunma"
     ),
     axis=1,
 )
@@ -253,31 +253,44 @@ def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
         by="Genel Oyuncu Becerisi", ascending=False
     )
 
-    # Takımlara savunma oyuncuları dağıtma
-    for i in range(min_defenders):
-        for team in teams.keys():
-            if not defenders.empty:
-                teams[team].append(defenders.iloc[0].to_dict())
-                defenders = defenders.iloc[1:]
+    # Takımlara savunma oyuncuları dağıtma (1. takımdan başlayarak)
+    team_cycle_defense = iter(teams.keys())
+    while not defenders.empty:
+        try:
+            team = next(team_cycle_defense)
+        except StopIteration:
+            team_cycle_defense = iter(teams.keys())
+            team = next(team_cycle_defense)
 
-    # Takımlara hücum oyuncuları dağıtma
-    for i in range(min_attackers):
-        for team in teams.keys():
-            if not attackers.empty:
-                teams[team].append(attackers.iloc[0].to_dict())
-                attackers = attackers.iloc[1:]
+        teams[team].append(defenders.iloc[0].to_dict())
+        defenders = defenders.iloc[1:]
 
-    # Kalan oyuncuları birleştir ve sırayla takımlara eşit şekilde dağıt
+    # Takımlara hücum oyuncuları dağıtma (2. takımdan başlayarak)
+    team_cycle_offense = iter(
+        list(teams.keys())[1:] + list(teams.keys())[:1]
+    )  # 2. takımdan başla
+    while not attackers.empty:
+        try:
+            team = next(team_cycle_offense)
+        except StopIteration:
+            team_cycle_offense = iter(list(teams.keys())[1:] + list(teams.keys())[:1])
+            team = next(team_cycle_offense)
+
+        teams[team].append(attackers.iloc[0].to_dict())
+        attackers = attackers.iloc[1:]
+
+    # Kalan oyuncuları sıralayıp 1. takımdan başlayarak dağıtma
     remaining_players = pd.concat([defenders, attackers]).sort_values(
         by="Genel Oyuncu Becerisi", ascending=False
     )
-    team_cycle = iter(teams.keys())
+    team_cycle_remaining = iter(teams.keys())  # 1. takımdan başlayarak sırayla dönecek
+
     while not remaining_players.empty:
         try:
-            team = next(team_cycle)
+            team = next(team_cycle_remaining)
         except StopIteration:
-            team_cycle = iter(teams.keys())
-            team = next(team_cycle)
+            team_cycle_remaining = iter(teams.keys())
+            team = next(team_cycle_remaining)
 
         teams[team].append(remaining_players.iloc[0].to_dict())
         remaining_players = remaining_players.iloc[1:]
@@ -298,3 +311,8 @@ for team_name, players in balanced_teams.items():
     print(f"\n{team_name} Players:")
     player_names = [player["İsim"] for player in players]
     print(pd.DataFrame(player_names, columns=["İsim"]))
+
+# Takımların Genel Takım Puanlarını hesaplama ve gösterme
+for team_name, players in balanced_teams.items():
+    total_team_score = sum(player["Genel Oyuncu Becerisi"] for player in players)
+    print(f"\n{team_name} Genel Takım Puanı: {total_team_score}")
