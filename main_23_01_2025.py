@@ -200,7 +200,7 @@ yagiz_players_data = [
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 3,
         "Birebir Savunma Becerisi": 2,
-        "Takım Savunması Becerisi": 1,
+        "Takım Savunması Becerisi": 2,
     },
 ]
 
@@ -238,55 +238,41 @@ df["Pozisyon"] = df.apply(
 
 # Dengeli takım oluşturma
 def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
-    # Genel Oyuncu Becerisi hesaplama
-    df["Genel Oyuncu Becerisi"] = (
-        df["Genel Savunma Becerisi"] + df["Genel Hücum Becerisi"]
-    )
-
     teams = {f"Team {i+1}": [] for i in range(num_teams)}
-
-    # Pozisyona göre oyuncuları ayırma
-    defenders = df[df["Pozisyon"] == "Savunma"].sort_values(
-        by="Genel Oyuncu Becerisi", ascending=False
-    )
-    attackers = df[df["Pozisyon"] == "Hücum"].sort_values(
-        by="Genel Oyuncu Becerisi", ascending=False
+    df_sorted = df.sort_values(
+        by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False
     )
 
-    # Takımlara savunma oyuncuları dağıtma
+    # Savunma ve hücum oyuncuları
+    defenders = df_sorted[df_sorted["Pozisyon"] == "Savunma"]
+    attackers = df_sorted[df_sorted["Pozisyon"] == "Hücum"]
+
+    # Takımlara savunma ve hücum oyuncuları dağıtma
     for i in range(min_defenders):
         for team in teams.keys():
             if not defenders.empty:
                 teams[team].append(defenders.iloc[0].to_dict())
                 defenders = defenders.iloc[1:]
 
-    # Takımlara hücum oyuncuları dağıtma
     for i in range(min_attackers):
         for team in teams.keys():
             if not attackers.empty:
                 teams[team].append(attackers.iloc[0].to_dict())
                 attackers = attackers.iloc[1:]
 
-    # Kalan oyuncuları birleştir ve sırayla takımlara eşit şekilde dağıt
-    remaining_players = pd.concat([defenders, attackers]).sort_values(
-        by="Genel Oyuncu Becerisi", ascending=False
-    )
-    team_cycle = iter(teams.keys())
+    # Kalan oyuncuları sırayla dağıtma
+    remaining_players = pd.concat([defenders, attackers])
     while not remaining_players.empty:
-        try:
-            team = next(team_cycle)
-        except StopIteration:
-            team_cycle = iter(teams.keys())
-            team = next(team_cycle)
-
-        teams[team].append(remaining_players.iloc[0].to_dict())
-        remaining_players = remaining_players.iloc[1:]
+        for team in teams.keys():
+            if not remaining_players.empty:
+                teams[team].append(remaining_players.iloc[0].to_dict())
+                remaining_players = remaining_players.iloc[1:]
 
     return teams
 
 
 # Takımları oluştur
-balanced_teams = balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3)
+balanced_teams = balance_teams(df)
 
 # Takımları görüntüleme
 for team_name, players in balanced_teams.items():

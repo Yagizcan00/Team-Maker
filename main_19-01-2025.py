@@ -1,6 +1,6 @@
 import pandas as pd
 
-'''
+"""
 # Görkem Abinin Puanlaması
 players_data = [
     {
@@ -102,7 +102,7 @@ players_data = [
         "Takım Savunması Becerisi": 3,
     },
 ]
-'''
+"""
 
 # Yağızın Puanlaması
 players_data = [
@@ -229,14 +229,21 @@ df["Genel Savunma Becerisi"] = (
 
 # Pozisyona göre etiketleme
 df["Pozisyon"] = df.apply(
-    lambda row: "Savunma" if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"] else "Hücum",
-    axis=1
+    lambda row: (
+        "Savunma"
+        if row["Genel Savunma Becerisi"] > row["Genel Hücum Becerisi"]
+        else "Hücum"
+    ),
+    axis=1,
 )
+
 
 # Dengeli takım oluşturma
 def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
     teams = {f"Team {i+1}": [] for i in range(num_teams)}
-    df_sorted = df.sort_values(by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False)
+    df_sorted = df.sort_values(
+        by=["Genel Hücum Becerisi", "Genel Savunma Becerisi"], ascending=False
+    )
 
     # Savunma ve hücum oyuncuları
     defenders = df_sorted[df_sorted["Pozisyon"] == "Savunma"]
@@ -264,6 +271,7 @@ def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
                 remaining_players = remaining_players.iloc[1:]
 
     return teams
+
 
 # Takımları oluştur
 balanced_teams = balance_teams(df)
