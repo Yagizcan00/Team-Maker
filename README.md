@@ -1,5 +1,7 @@
 # Kadro Kurma Programı
 
+Programımız sizlerin arkadaşlarınıza verdiğiniz özellik puanlarını temel alıyor. Önce gerekli beceri puanlarını ve kişi isimlerini uygun formatta giriyorsunuz sonra ise program bu özelliklerin 7'ye 7 yapılan bir halısaha maçı sırasında oyuna ne kadar etki ettiğini belirten çarpanlar ile çarparak genel bir Oyuncu Hücum Puanı ve Oyuncu Savunma Puanı çıkarıyor ve bu özelliklere göre oyuncuları Hücumcu ya da Savunmacı olarak kategorize ediyor. Sonra ise bu iki puanı toplayarak bir Genel Oyuncu Becerisi puanı hesaplıyor. Sonra ise iki takımda da minimum 3 hücumcu ve savunmacı olacak şekilde (bu sayılar değiştirilebilir) oyucuları dağıtmaya başlıyor. Önce en yüksek beceriye sahip hücum oyuncularını 1. takımdan başlayarak sonra ise en yüksek beceriye sahip savunma oyuncularını 2. takımdan başlayarak dağıtıyor. Sonra ise kalan oyunculardan en yüksek beceriye sahip oyuncuları 2. takımdan başlayarak takımlara dağıtıyor.
+
 Yapılan puanlamalarda **"Topu Kullanma Becerisi"** puanı oyuncunun top kendisindeyken ne kadar etkili bir şekilde oyun kurabildiğini ve hücum edebildiğini genel olarak ifade eden bir özelliktir.
 
 - Eğer oyuncu dribling ile adam geçmiyorsa ve sadece en yakınındaki takım arkadaşlarına isabetli paslar atıyorsa bu beceriye 1 puan vermeniz önerilir.
@@ -24,10 +26,12 @@ Yapılan puanlamalarda **"Birebir Savunma Becerisi"** puanı oyuncunun rakip hü
 - Eğer oyuncu rakibin iyi hücum oyuncularını durdurabiliyorsa ve bu gibi pozisyonlarda fiziki açıdan bir problem yaşamıyorsa bu beceriye 4 puan vermeniz önerilir.
 - Eğer oyuncu rakibin iyi hücum oyuncularını durdurabiliyosa ve bu gibi pozisyonlarda fiziki açıdan rakiplerine üstünlük kurabiliyorsa bu beceriye 5 puan vermeniz önerilir.
 
-Yapılan puanlamalarda **"Takım Savunması Becerisi"** puanı oyuncunun top rakip takımdayken ne kadar dikkatli olduğunu, ne kadar iyi pozisyon aldığını ve takım arkadaşlarını rakip hücumculara karşı ne kadar iyi uyardığını genel olarak ifade eden bir özelliktir.
+Yapılan puanlamalarda **"Takım Savunması Becerisi"** puanı oyuncunun top rakip takımdayken ne kadar dikkatli olduğunu, ne kadar doğru pozisyon aldığını ve takım arkadaşlarını rakip hücumculara karşı ne kadar iyi uyardığını genel olarak ifade eden bir özelliktir.
 
-- Eğer oyuncu rakip takım hücum ederken rakibin hücumlarını izlemiyor/dikkat etmiyorsa ya da genellikle takım arkadaşlarının yerlerine bakmadan yanlış yerde yanlış adamı tutuyorsa bu beceriye 1 puan vermeniz önerilir.
-- Eğer oyuncu rakip takım hücum ederken rakibin hücumlarını sadece topun kendisine doğru zamanda/doğru yerde gelmesi için izliyor ve savunma tarafında yeterince çaba göstermiyorsa bu ebceriye 2 puan vermeniz önerilir.
-- Eğer oyuncu rakip takım hücum ederken rakibin hücumlarını standart derece takip ediyor ve çok iyi bir hücumcu ile karşılaşmadığı sürece kendi adamını tutuyorsa bu beceriye 3 puan vermeniz önerilir.
-- Eğer oyuncu rakip takım hücum ederken çevresinde olanlara ve oyunun akışına karşı dikkatliyse ve kendi adamını marke etmekte sorun yaşamıyorsa bu beceriye 4 puan vermeniz önerilir.
-- Eğer oyuncu hem rakip takımın hücumlarını dikkatli bir şekilde izleyip oyunun akışını takip ediyor hem de kendi takımının savunmasını organize ediyorsa gerekli uyarılarda bulunup büyük bir konsantrasyon ile oynuyorsa bu beceriye 5 puan vermeniz önerilir. 
+- Eğer oyuncu rakip takım hücum ederken rakibin hücumlarını izlemiyor/dikkat etmiyorsa ya da genellikle takım arkadaşlarının nerede durduklarına bakmadan yanlış yerde duruyorsa bu beceriye 1 puan vermeniz önerilir.
+- Eğer oyuncu rakip takım oyun kurarken rakip oyunculara zayıf bir baskı yapıyorsa ya da takım halinde savunma yaparken marke etmesi gereken oyuncuyu kontrolü altında tutmuyorsa bu beceriye 2 puan vermeniz önerilir.
+- Eğer oyuncu rakip takım hücum ederken rakibin hücumlarını genellikle takip ediyorsa ve çok iyi bir hücumcu ile karşılaşmadığı sürece kendi adamını marke edebiliyorsa bu beceriye 3 puan vermeniz önerilir.
+- Eğer oyuncu rakip takım hücum ederken hem çevresinde olanlara hem de oyunun akışına karşı dikkatliyse ve kendi adamını marke etmekte sorun yaşamıyorsa bu beceriye 4 puan vermeniz önerilir.
+- Eğer oyuncu hem rakip takımın hücumlarını dikkatli bir şekilde takip edip hem kendi sorumluluğundaki oyuncuyu marke edip hem de kendi takımının savunmasını organize edip yüksek seviyede bir konsantrasyon ile oynuyorsa bu beceriye 5 puan vermeniz önerilir. 
+
+Hepimiz doğal olarak maç esnasında hatalar yapabiliriz ya da bir veya iki maç özelinde yıldızlaşabiliriz fakat önemli olan düzenli bir şekilde tekrarlanan performanstır. Bu sebeple beceri puanlamaları konusunda, yapılan hatalara fazla odaklanmadan ve fazla iyimser davranmadan ilgili paun atamalarınızı yapmanızı tavsiye ederiz. Ek olarak emin olmak için yapılan ilk puanlamadan bir 10dk sonra tekrar gözden geçirmeniz iyi olabilir.
