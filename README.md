@@ -35,3 +35,10 @@ Yapılan puanlamalarda **"Takım Savunması Becerisi"** puanı oyuncunun top rak
 - Eğer oyuncu hem rakip takımın hücumlarını dikkatli bir şekilde takip edip hem kendi sorumluluğundaki oyuncuyu marke edip hem de kendi takımının savunmasını organize edip yüksek seviyede bir konsantrasyon ile oynuyorsa bu beceriye 5 puan vermeniz önerilir. 
 
 Hepimiz doğal olarak maç esnasında hatalar yapabiliriz ya da bir veya iki maç özelinde yıldızlaşabiliriz fakat önemli olan düzenli bir şekilde tekrarlanan performanstır. Bu sebeple beceri puanlamaları konusunda, yapılan hatalara fazla odaklanmadan ve fazla iyimser davranmadan ilgili paun atamalarınızı yapmanızı tavsiye ederiz. Ek olarak emin olmak için yapılan ilk puanlamadan bir 10dk sonra tekrar gözden geçirmeniz iyi olabilir.
+
+**Çarpanlar**
+
+- **Topu Kullanma Becerisi : 2.0** -> Bu özelliğin bu çarpanı almasının sebebi halısaha maçları gibi az sayıda oyuncunun bulunduğu ve hücum ile savunma setlerinin genellikle 3 ya da 4 oyuncu ile yapıldığı bu gibi durumlarda bu becerinin en çok fark yaratacak beceri olmasıdır. Fiziki ve teknik açıcan üst düzey bir oyuncu karşısında iyi savunma oyuncuları bulunmasına rağmen atacağı bir şut ile ya da sürati, çevikliği ve dribling becerisi ile rakip savunma oyuncularını ekarte edebilir. İki adet iyi seviyede ve eşit fizik kaliteye sahip oyuncu düşünelim, birisinin birebir savunma becerisi 5 diğerinin ise topu kullanma becerisi 5 olsun. Bu iki oyuncu bir halısaha maçında karşı karşıya geldikleri zaman hücum eden oyuncu pas deneybilir, dribling deneyebilir ya da şut deneyebilir yani bu oyuncu çeşitli opsiyonlara sahiptir fakat savunmacı ise rakip oyuncunun niyetini sezmeli ve ona göre karşısında durarak topu kendisinde alabilmek için becerilerini kullanmalıdır ve bu işlemler sırasında yapacağı herhangi bir hata takımının yiyeceği bir gol ile sonuçlanabilir. Yani bu gibi pozisyonlarda eğer savunmacı daha gelişmiş bir fizik kaliteye sahip değilse rakibi 10 pozisyonun en az 6'sında kendisine üstünlük sağlayacaktır.
+- **Topsuz Alanda Hücum Becerisi : 1.6** -> 
+- **Birebir Savunma Becerisi : 1.7** ->
+- **Takım Savunması Becerisi : 1.8** ->
