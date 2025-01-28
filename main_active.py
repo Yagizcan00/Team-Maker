@@ -114,15 +114,15 @@ yagiz_players_data = [
     {
         "İsim": "Samet",
         "Topu Kullanma Becerisi": 4,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 4,
+        "Birebir Savunma Yapma Becerisi": 3,
+        "Takım Halinde Savunma Yapma Becerisi": 3,
     },
     {
         "İsim": "Muhammed",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 3,
+        "Birebir Savunma Yapma Becerisi": 4,
         "Takım Halinde Savunma Yapma Becerisi": 3,
     },
     {
@@ -141,21 +141,21 @@ yagiz_players_data = [
     },
     {
         "İsim": "Oğuzhan",
-        "Topu Kullanma Becerisi": 2,
+        "Topu Kullanma Becerisi": 1,
         "Topsuz Alanda Hücum Becerisi": 1,
         "Birebir Savunma Yapma Becerisi": 2,
         "Takım Halinde Savunma Yapma Becerisi": 2,
     },
     {
         "İsim": "Cihan",
-        "Topu Kullanma Becerisi": 4,
-        "Topsuz Alanda Hücum Becerisi": 2,
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
         "Birebir Savunma Yapma Becerisi": 3,
         "Takım Halinde Savunma Yapma Becerisi": 2,
     },
     {
         "İsim": "İlker",
-        "Topu Kullanma Becerisi": 2,
+        "Topu Kullanma Becerisi": 1,
         "Topsuz Alanda Hücum Becerisi": 2,
         "Birebir Savunma Yapma Becerisi": 4,
         "Takım Halinde Savunma Yapma Becerisi": 4,
@@ -179,13 +179,13 @@ yagiz_players_data = [
         "Topu Kullanma Becerisi": 5,
         "Topsuz Alanda Hücum Becerisi": 5,
         "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 2,
+        "Takım Halinde Savunma Yapma Becerisi": 3,
     },
     {
         "İsim": "Batu",
         "Topu Kullanma Becerisi": 5,
         "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Yapma Becerisi": 4,
+        "Birebir Savunma Yapma Becerisi": 5,
         "Takım Halinde Savunma Yapma Becerisi": 5,
     },
     {
@@ -222,7 +222,8 @@ df["Genel Hücum Becerisi"] = (
 )
 df["Genel Savunma Becerisi"] = (
     df["Birebir Savunma Yapma Becerisi"] * multipliers["birebir_savunma_yapma_becerisi"]
-    + df["Takım Halinde Savunma Yapma Becerisi"] * multipliers["takim_halinde_savunma_yapma_becerisi"]
+    + df["Takım Halinde Savunma Yapma Becerisi"]
+    * multipliers["takim_halinde_savunma_yapma_becerisi"]
 )
 
 # Pozisyona göre etiketleme
@@ -279,17 +280,17 @@ def balance_teams(df, num_teams=2, min_defenders=3, min_attackers=3):
         teams[team].append(attackers.iloc[0].to_dict())
         attackers = attackers.iloc[1:]
 
-    # Kalan oyuncuları sıralayıp 1. takımdan başlayarak dağıtma
+    # Kalan oyuncuları sıralayıp 2. takımdan başlayarak dağıtma
     remaining_players = pd.concat([defenders, attackers]).sort_values(
         by="Genel Oyuncu Becerisi", ascending=False
     )
-    team_cycle_remaining = iter(teams.keys())  # 1. takımdan başlayarak sırayla dönecek
+    team_cycle_remaining = iter(list(teams.keys())[1:] + list(teams.keys())[:1])
 
     while not remaining_players.empty:
         try:
             team = next(team_cycle_remaining)
         except StopIteration:
-            team_cycle_remaining = iter(teams.keys())
+            team_cycle_remaining = iter(list(teams.keys())[1:] + list(teams.keys())[:1])
             team = next(team_cycle_remaining)
 
         teams[team].append(remaining_players.iloc[0].to_dict())
