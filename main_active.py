@@ -190,10 +190,10 @@ yagiz_players_data = [
     },
     {
         "İsim": "Ali",
-        "Topu Kullanma Becerisi": 2,
+        "Topu Kullanma Becerisi": 3,
         "Topsuz Alanda Hücum Becerisi": 3,
         "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 1,
+        "Takım Halinde Savunma Yapma Becerisi": 2,
     },
     {
         "İsim": "Metehan",
