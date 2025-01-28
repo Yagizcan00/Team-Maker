@@ -98,6 +98,20 @@ görkem_players_data = [
         "Birebir Savunma Becerisi": 4,
         "Takım Savunması Becerisi": 3,
     },
+    {
+        "İsim": "Batu",
+        "Topu Kullanma Becerisi": 5,
+        "Topsuz Alanda Hücum Becerisi": 5,
+        "Birebir Savunma Becerisi": 4,
+        "Takım Savunması Becerisi": 2,
+    },
+    {
+        "İsim": "Ali",
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Becerisi": 2,
+        "Takım Savunması Becerisi": 1,
+    },
 ]
 
 # Yağızın Puanlaması
