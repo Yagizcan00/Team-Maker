@@ -34,7 +34,7 @@ Yapılan puanlamalarda **"Takım Halinde Savunma Yapma Becerisi"** puanı oyuncu
 - Eğer oyuncu rakip takım hücum ederken hem çevresinde olanlara hem de oyunun akışına karşı dikkatliyse ve kendi adamını marke etmekte sorun yaşamıyorsa bu beceriye 4 puan vermeniz önerilir.
 - Eğer oyuncu hem rakip takımın hücumlarını dikkatli bir şekilde takip edip hem kendi sorumluluğundaki oyuncuyu marke edip hem de kendi takımının savunmasını organize edip yüksek seviyede bir konsantrasyon ile oynuyorsa bu beceriye 5 puan vermeniz önerilir. 
 
-Hepimiz doğal olarak maç esnasında hatalar yapabiliriz ya da bir veya iki maç özelinde yıldızlaşabiliriz fakat önemli olan düzenli bir şekilde tekrarlanan performanstır. Bu sebeple beceri puanlamaları konusunda, yapılan hatalara fazla odaklanmadan ve fazla iyimser davranmadan ilgili paun atamalarınızı yapmanızı tavsiye ederiz. Ek olarak emin olmak için yapılan ilk puanlamadan bir 10dk sonra tekrar gözden geçirmeniz iyi olabilir.
+Hepimiz doğal olarak maç esnasında hatalar yapabiliriz ya da bir veya iki maç özelinde yıldızlaşabiliriz fakat önemli olan düzenli bir şekilde tekrarlanan performanstır. Bu sebeple beceri puanlamaları konusunda, yapılan hatalara fazla odaklanmadan ve fazla iyimser davranmadan ilgili paun atamalarınızı yapmanızı tavsiye ederiz. Ek olarak emin olmak için yapılan ilk puanlamadan bir 10dk sonra tekrar gözden geçirmeniz daha doğru bir puanlama için iyi olabilir.
 
 **Çarpanlar**
 
