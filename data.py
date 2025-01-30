@@ -218,8 +218,8 @@ yagiz_players_data = [
         "İsim": "Batu",
         "Topu Kullanma Becerisi": 5,
         "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Yapma Becerisi": 5,
-        "Takım Halinde Savunma Yapma Becerisi": 5,
+        "Birebir Savunma Yapma Becerisi": 4,
+        "Takım Halinde Savunma Yapma Becerisi": 4,
     },
     {
         "İsim": "Ali",
@@ -248,6 +248,13 @@ yagiz_players_data = [
         "Topsuz Alanda Hücum Becerisi": 3,
         "Birebir Savunma Yapma Becerisi": 2,
         "Takım Halinde Savunma Yapma Becerisi": 2,
+    },
+    {
+        "İsim": "Soner",
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Yapma Becerisi": 3,
+        "Takım Halinde Savunma Yapma Becerisi": 3,
     },
 ]
 
