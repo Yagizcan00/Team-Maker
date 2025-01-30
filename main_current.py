@@ -115,8 +115,8 @@ yagiz_players_data = [
         "İsim": "Muhammed",
         "Topu Kullanma Becerisi": 2,
         "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
+        "Birebir Savunma Yapma Becerisi": 3,
+        "Takım Halinde Savunma Yapma Becerisi": 4,
     },
     {
         "İsim": "Nurullah",
