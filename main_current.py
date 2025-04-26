@@ -1,107 +1,5 @@
 import pandas as pd
 
-# Yağızın Puanlaması
-yagiz_players_data = [
-    {
-        "İsim": "Yağızcan",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 5,
-    },
-    {
-        "İsim": "Muhammed",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Nurullah",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Yasin",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
-    },
-    {
-        "İsim": "Cihan",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 2,
-    },
-    {
-        "İsim": "İlker",
-        "Topu Kullanma Becerisi": 1,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Kerem",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 2,
-    },
-    {
-        "İsim": "Emre Turan",
-        "Topu Kullanma Becerisi": 1,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Görkem",
-        "Topu Kullanma Becerisi": 5,
-        "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
-    },
-    {
-        "İsim": "Batu",
-        "Topu Kullanma Becerisi": 5,
-        "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Yapma Becerisi": 4,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Ali",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 2,
-    },
-    {
-        "İsim": "Cengizhan",
-        "Topu Kullanma Becerisi": 1,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
-    },
-    {
-        "İsim": "Soner",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
-    },
-    {
-        "İsim": "Reşat",
-        "Topu Kullanma Becerisi": 5,
-        "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
-    },
-]
-
 # Anket Sonucu Ortak Oyuncu Puanlaması Ortalaması
 common_scoring_players_data = [
     {
@@ -126,20 +24,6 @@ common_scoring_players_data = [
         "Takım Halinde Savunma Yapma Becerisi": 4,
     },
     {
-        "İsim": "Yasin",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 2.75,
-        "Takım Halinde Savunma Yapma Becerisi": 3.25,
-    },
-    {
-        "İsim": "Cihan",
-        "Topu Kullanma Becerisi": 3.25,
-        "Topsuz Alanda Hücum Becerisi": 3.25,
-        "Birebir Savunma Yapma Becerisi": 3.25,
-        "Takım Halinde Savunma Yapma Becerisi": 2.5,
-    },
-    {
         "İsim": "İlker",
         "Topu Kullanma Becerisi": 1.5,
         "Topsuz Alanda Hücum Becerisi": 1.75,
@@ -147,25 +31,11 @@ common_scoring_players_data = [
         "Takım Halinde Savunma Yapma Becerisi": 3.75,
     },
     {
-        "İsim": "Kerem",
-        "Topu Kullanma Becerisi": 2.25,
-        "Topsuz Alanda Hücum Becerisi": 3.5,
-        "Birebir Savunma Yapma Becerisi": 2.25,
-        "Takım Halinde Savunma Yapma Becerisi": 1.75,
-    },
-    {
         "İsim": "Emre Turan",
         "Topu Kullanma Becerisi": 1.5,
         "Topsuz Alanda Hücum Becerisi": 2,
         "Birebir Savunma Yapma Becerisi": 3.75,
         "Takım Halinde Savunma Yapma Becerisi": 3.5,
-    },
-    {
-        "İsim": "Görkem",
-        "Topu Kullanma Becerisi": 4.75,
-        "Topsuz Alanda Hücum Becerisi": 4.75,
-        "Birebir Savunma Yapma Becerisi": 4.25,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
     },
     {
         "İsim": "Batu",
@@ -182,14 +52,28 @@ common_scoring_players_data = [
         "Takım Halinde Savunma Yapma Becerisi": 1.75,
     },
     {
-        "İsim": "Cengizhan",
-        "Topu Kullanma Becerisi": 1.5,
-        "Topsuz Alanda Hücum Becerisi": 2.25,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 2.25,
+        "İsim": "Yasin",
+        "Topu Kullanma Becerisi": 3,
+        "Topsuz Alanda Hücum Becerisi": 3,
+        "Birebir Savunma Yapma Becerisi": 2.75,
+        "Takım Halinde Savunma Yapma Becerisi": 3.25,
     },
     {
-        "İsim": "Soner",
+        "İsim": "Samet",
+        "Topu Kullanma Becerisi": 4,
+        "Topsuz Alanda Hücum Becerisi": 4,
+        "Birebir Savunma Yapma Becerisi": 2,
+        "Takım Halinde Savunma Yapma Becerisi": 2,
+    },
+    {
+        "İsim": "Mehmet Emin",
+        "Topu Kullanma Becerisi": 2,
+        "Topsuz Alanda Hücum Becerisi": 2,
+        "Birebir Savunma Yapma Becerisi": 1,
+        "Takım Halinde Savunma Yapma Becerisi": 2,
+    },
+    {
+        "İsim": "Ertuğrul",
         "Topu Kullanma Becerisi": 3,
         "Topsuz Alanda Hücum Becerisi": 3,
         "Birebir Savunma Yapma Becerisi": 3,
@@ -201,6 +85,20 @@ common_scoring_players_data = [
         "Topsuz Alanda Hücum Becerisi": 4.75,
         "Birebir Savunma Yapma Becerisi": 3.25,
         "Takım Halinde Savunma Yapma Becerisi": 3.5,
+    },
+    {
+        "İsim": "Görkem",
+        "Topu Kullanma Becerisi": 4.75,
+        "Topsuz Alanda Hücum Becerisi": 4.75,
+        "Birebir Savunma Yapma Becerisi": 4.25,
+        "Takım Halinde Savunma Yapma Becerisi": 4,
+    },
+    {
+        "İsim": "Cengizhan",
+        "Topu Kullanma Becerisi": 1.5,
+        "Topsuz Alanda Hücum Becerisi": 2.25,
+        "Birebir Savunma Yapma Becerisi": 2,
+        "Takım Halinde Savunma Yapma Becerisi": 2.25,
     },
 ]
 

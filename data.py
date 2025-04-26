@@ -258,108 +258,6 @@ yagiz_players_data = [
     },
 ]
 
-# Anket Sonucu Ortak Oyuncu Puanlaması Ortalaması
-common_scoring_players_data = [
-    {
-        "İsim": "Yağızcan",
-        "Topu Kullanma Becerisi": 2,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 4.25,
-        "Takım Halinde Savunma Yapma Becerisi": 4.75,
-    },
-    {
-        "İsim": "Muhammed",
-        "Topu Kullanma Becerisi": 2.25,
-        "Topsuz Alanda Hücum Becerisi": 1.5,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 3.25,
-    },
-    {
-        "İsim": "Nurullah",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 2.75,
-        "Birebir Savunma Yapma Becerisi": 3.75,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Yasin",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 2.75,
-        "Takım Halinde Savunma Yapma Becerisi": 3.25,
-    },
-    {
-        "İsim": "Cihan",
-        "Topu Kullanma Becerisi": 3.25,
-        "Topsuz Alanda Hücum Becerisi": 3.25,
-        "Birebir Savunma Yapma Becerisi": 3.25,
-        "Takım Halinde Savunma Yapma Becerisi": 2.5,
-    },
-    {
-        "İsim": "İlker",
-        "Topu Kullanma Becerisi": 1.5,
-        "Topsuz Alanda Hücum Becerisi": 1.75,
-        "Birebir Savunma Yapma Becerisi": 3.75,
-        "Takım Halinde Savunma Yapma Becerisi": 3.75,
-    },
-    {
-        "İsim": "Kerem",
-        "Topu Kullanma Becerisi": 2.25,
-        "Topsuz Alanda Hücum Becerisi": 3.5,
-        "Birebir Savunma Yapma Becerisi": 2.25,
-        "Takım Halinde Savunma Yapma Becerisi": 1.75,
-    },
-    {
-        "İsim": "Emre Turan",
-        "Topu Kullanma Becerisi": 1.5,
-        "Topsuz Alanda Hücum Becerisi": 2,
-        "Birebir Savunma Yapma Becerisi": 3.75,
-        "Takım Halinde Savunma Yapma Becerisi": 3.5,
-    },
-    {
-        "İsim": "Görkem",
-        "Topu Kullanma Becerisi": 4.75,
-        "Topsuz Alanda Hücum Becerisi": 4.75,
-        "Birebir Savunma Yapma Becerisi": 4.25,
-        "Takım Halinde Savunma Yapma Becerisi": 4,
-    },
-    {
-        "İsim": "Batu",
-        "Topu Kullanma Becerisi": 5,
-        "Topsuz Alanda Hücum Becerisi": 5,
-        "Birebir Savunma Yapma Becerisi": 3.75,
-        "Takım Halinde Savunma Yapma Becerisi": 3.5,
-    },
-    {
-        "İsim": "Ali",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 1.75,
-    },
-    {
-        "İsim": "Cengizhan",
-        "Topu Kullanma Becerisi": 1.5,
-        "Topsuz Alanda Hücum Becerisi": 2.25,
-        "Birebir Savunma Yapma Becerisi": 2,
-        "Takım Halinde Savunma Yapma Becerisi": 2.25,
-    },
-    {
-        "İsim": "Soner",
-        "Topu Kullanma Becerisi": 3,
-        "Topsuz Alanda Hücum Becerisi": 3,
-        "Birebir Savunma Yapma Becerisi": 3,
-        "Takım Halinde Savunma Yapma Becerisi": 3,
-    },
-    {
-        "İsim": "Reşat",
-        "Topu Kullanma Becerisi": 4.75,
-        "Topsuz Alanda Hücum Becerisi": 4.75,
-        "Birebir Savunma Yapma Becerisi": 3.25,
-        "Takım Halinde Savunma Yapma Becerisi": 3.5,
-    },
-]
-
 # Çarpanlar
 multipliers = {
     "topu_kullanma_becerisi": 2.0,
@@ -367,3 +265,4 @@ multipliers = {
     "birebir_savunma_yapma_becerisi": 1.7,
     "takim_halinde_savunma_yapma_becerisi": 1.8,
 }
+
